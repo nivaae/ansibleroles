@@ -1,1 +1,8 @@
-
+---
+- hosts: [wordpress] 
+  user: ec2-user
+  become: true
+  become_method: sudo
+  become_user: root
+  roles: 
+    - wordpress
