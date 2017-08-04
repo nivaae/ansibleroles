@@ -1,5 +1,5 @@
 ---
-- hosts: ec2-54-236-21-211.compute-1.amazonaws.com:22 
+- hosts: [apache] 
   user: ec2-user
   become: true
   become_method: sudo
